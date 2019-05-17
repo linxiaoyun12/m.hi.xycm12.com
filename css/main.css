@@ -1,0 +1,185 @@
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%; /*10/16=62.5%*/
+}
+
+body {
+  font-size: 12px;
+  font-size: 1.2rem; /*12/10=1.2*/
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x:hidden */
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  /* background-position:center; */
+  background-size: cover;
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.hi-nav {
+  /* border-bottom: 1px solid rgb(230, 227, 227); */
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: hsla(0, 0%, 95%, 0.4);
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hi-nav-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3.8rem;
+  width: 100%;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.hi-nav a {
+  color: #fff;
+  display: block;
+}
+
+.hi-content {
+  min-width: 50rem;
+  max-width: 98rem;
+  margin: 0 auto;
+  /* border-left: 1px solid red; */
+  /* border-right: 1px solid red; */
+}
+
+.hi-nav-header {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  height: 3.8rem;
+  display: inline-block;
+  /* background-color: greenyellow */
+  cursor: pointer;
+}
+
+.hi-nav-item {
+  display: inline-block;
+  width: 7%;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  text-align: center;
+  position:relative
+}
+
+.hi-nav-right-item {
+  display: inline-block;
+  width: 20%;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  /* background-color: red; */
+}
+
+.hi-nav-dropmenu {
+  display: none;
+  position: absolute;
+  top: 3.8rem;
+  left: 0;
+  width: 10rem;
+  max-height: 50rem;
+  background-color: rgb(46, 45, 45);
+  opacity: 0.9;
+  z-index: 10;
+  border-radius: 4px
+}
+
+.hi-nav-item:hover .hi-nav-dropmenu{
+  display: block;
+}
+
+.hi-nav-dropmenu-item a {
+  height: 3.8rem;
+  font-size: 1.15rem;
+  transition: font-size 0.1s; /*过渡效果*/
+}
+.hi-nav-dropmenu-item a:hover {
+  background: rgb(128, 127, 127);
+  opacity: 0.95;
+  font-size: 1.25rem;
+  border-radius: 4px
+}
+
+.hi-nav-dropmenu-item{
+  /* display: inline-block; */
+  /* width: 9rem; */
+}
+
+.hi-search {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 7rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.hi-search-logo {
+  display: inline-block;
+  height: 5rem;
+  line-height: 7rem;
+}
+
+.hi-search-bar {
+  display: inline-block;
+  height: 5rem;
+  line-height: 7rem;
+}
+
+.hi-search-input {
+  width: 45rem;
+  height: 2.8rem;
+}
+
+.hi-container {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 40rem;
+  margin-top: 2rem;
+  color: #fff;
+}
