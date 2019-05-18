@@ -15,6 +15,7 @@ h6 {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 li {
@@ -35,14 +36,14 @@ body {
   text-size-adjust: 100%;
   margin: 0;
   padding: 0;
-  /* overflow-x:hidden */
-  background-image: url("../img/bg.jpg");
-  background-clip:border-box;
-  background-repeat: no-repeat; 
-  background-position:center -1rem;
-  background-size: 100%;
   color: #fff;
-  z-index: -100;
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 p {
@@ -52,14 +53,6 @@ p {
 
 .nav {
   width: 100%;
-  /* border-bottom: 1px solid rgb(230, 227, 227); */
-  -moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   background-color: hsla(0, 0%, 95%, 0.4);
   box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
 }
@@ -71,18 +64,14 @@ p {
   height: 3.8rem;
   width: 100%;
   background-image: url("../img/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+  background-position:fixed;
   filter: blur(10px);
-  z-index: -1;
+  z-index: -10;
 }
 
 .content {
   width: 98rem;
   margin: 0 auto;
-  /* border-left: 1px solid red; */
-  /* border-right: 1px solid red; */
 }
 
 .nav-header {
@@ -129,7 +118,7 @@ p {
   position: absolute;
   top: 3.8rem;
   left: 0;
-  width: 10rem;
+  width: 9rem;
   max-height: 50rem;
   background-color: rgb(46, 45, 45);
   opacity: 0.9;
@@ -191,11 +180,41 @@ p {
     box-shadow: 0 0 0 2px rgba(68, 71, 70, 0.2);
 }
 
-.container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  width: 100%;
-  height: 40rem;
-  margin-top: 2rem;
+.main-container {
+  width: 98rem;
+  height: 45rem;
+  margin-top:50px;
   color: #fff;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  /* margin: 0 auto; */
+}
+
+.main-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/bg.jpg");
+  /* background-position:fixed; */
+  background-size: cover;
+  z-index: -10;
+  filter: blur(2px)
+}
+
+.main-container-item{
+  display: inline-block;
+  width: 6%;
+  padding: 3rem;
+}
+
+.main-container-item-a img{
+  width: 100%;
 }
