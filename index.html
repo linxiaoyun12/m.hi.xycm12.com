@@ -5,58 +5,70 @@
     <meta charset="utf-8">
     <meta content="no" name="apple-mobile-web-app-capable">
     <meta name="viewport"
-        content="viewport-fit:cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,">
+        content="viewport-fit:cover,width=deivewidth,initial-scale=1.0, maximum-scale=1.0, user-scalable=no,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>简导航</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
-    <nav class="hi-nav">
-        <div class="hi-nav-bg"></div>
-        <div class="hi-content">
-            <ul class="hi-nav-header">
-                <li class="hi-nav-item">
+    <nav class="nav">
+        <div class="nav-bg"></div>
+        <div class="content">
+            <div class="nav-logo">Xy导航</div>
+            <ul class="nav-header">
+                <li class="nav-item">
                     <a href="#">资讯</a>
                 </li>
-                <li class="hi-nav-item">
+                <li class="nav-item">
                     <a href="#">翻译</a>
                 </li>
-                <li class="hi-nav-item">
+                <li class="nav-item">
                     <a href="#">地图</a>
-                </li>
-                <li class="hi-nav-item">
-                    <a href="#">网盘</a>
-                    <div class="hi-nav-dropmenu">
-                        <div class="hi-nav-dropmenu-item"><a href="#">115网盘</a></div>
-                        <div class="hi-nav-dropmenu-item"><a href="#">OneDrive</a></div>
-                        <div class="hi-nav-dropmenu-item"><a href="#">百度网盘</a></div>
-                        <div class="hi-nav-dropmenu-item"><a href="#">金山快盘</a></div>
+                    <div class="nav-dropmenu">
+                            <div class="nav-dropmenu-item"><a href="#">百度地图</a></div>
+                            <div class="nav-dropmenu-item"><a href="#">腾讯地图</a></div>
+                            <div class="nav-dropmenu-item"><a href="#">高德地图</a></div>
+                            <div class="nav-dropmenu-item"><a href="#">Google地图</a></div>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a href="#">网盘</a>
+                    <div class="nav-dropmenu">
+                        <div class="nav-dropmenu-item"><a href="#">115网盘</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">OneDrive</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">百度网盘</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">金山快盘</a></div>
+                    </div>
+                </li>
+                <li class="nav-item-text">
+                    <span>天气</span>
+                </li>
             </ul>
-            <div class="hi-nav-right-item">
-                <span>天气</span>
+            <div class="nav-search">
+                <div class="nav-search-change">
+                    <a href="#">来源</a>
+                    <div class="nav-dropmenu">
+                        <div class="nav-dropmenu-item"><a href="#">百度</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">搜狗</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">360</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">Bing</a></div>
+                        <div class="nav-dropmenu-item"><a href="#">Google</a></div>
+                    </div>
+                </div>
+                <input type="search" class="search-input" placeholder="搜索">
             </div>
         </div>
     </nav>
-    <div class="hi-search">
-        <div class="hi-content">
-            <div class="hi-search-logo">Logo</div>
-            <div class="hi-search-bar">
-                <input type="text" class="hi-search-input">
-            </div>
-        </div>
-    </div>
-    <div class="hi-container">
-        <div class="hi-content">
+    <section class="container">
+        <div class="content">
             1
         </div>
-    </div>
-    <div class="hi-footer">
+    </section>
+    <footer class="footer">
 
-    </div>
-    <script src="./js/main.js"></script>
+    </footer>
 </body>
 
 </html>
