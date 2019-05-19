@@ -1,5 +1,5 @@
 /* 基本栅格布局 */
-.hi-container:after {
+.hi-container::after {
   content: "";
   display: block;
   clear: both;
@@ -13,12 +13,6 @@
   content: "";
   display: block;
   clear: both;
-}
-
-@media (min-width: 375px) {
-    .hi-container {
-      width: 375px;
-    }
 }
 
 @media (min-width: 768px) {
