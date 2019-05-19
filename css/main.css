@@ -60,8 +60,11 @@ p {
 /* header */
 .nav {
   width: 100%;
-  /* background-color: hsla(0, 0%, 95%, 0.4); */
+  background-color: hsla(0, 0%, 19%, 0.4);
   box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-header {
@@ -160,7 +163,7 @@ p {
   height: 2.2rem;
   outline: none;
   font-size: 0.9em;
-  padding: 0.3em;
+  padding-left: 0.3em;
   border-radius: 0.2em;
   border: 1px solid #f7f1f1;/*默认*/
   -webkit-appearance: none;
@@ -172,6 +175,7 @@ p {
 }
 
 .search-suggestions{
+  display: none;
   position: relative;
   left: 0;
   width: 20rem;
@@ -200,14 +204,8 @@ p {
 /* main */
 .main-container {
   width: 98rem;
-  height: 45rem;
   margin-top:50px;
   color: #fff;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
 }
 
 .main-container-item{
@@ -218,12 +216,13 @@ p {
 
 .main-container-item-a img{
   width: 100%;
+  border: none;
 }
 
 /* bg */
 
 .main-bg{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
