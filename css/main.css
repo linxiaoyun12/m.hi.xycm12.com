@@ -29,7 +29,6 @@ html {
 body {
   font-size: 12px;
   font-size: 1.2rem; /*12/10=1.2*/
-  padding-bottom: env(safe-area-inset-bottom);
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -44,17 +43,39 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 p {
   font-size: 14px;
   font-size: 1.4rem;
 }
-
-
-.content {
-  width: 98rem;
-  margin: 0 auto;
+@media (min-width: 375px) {
+  .content {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .hi-container {
+    width: 750px;
+  }
+  .content {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    width: 980px;
+    margin: 0 auto;
+  }
 }
 
 /* header */
@@ -216,20 +237,24 @@ p {
 
 /* main */
 .main-container {
-  width: 98rem;
   margin-top:50px;
   color: #fff;
-}
-
-.main-container-item{
-  display: inline-block;
-  width: 6%;
-  padding: 3rem;
 }
 
 .main-container-item-a img{
   width: 100%;
   border: none;
+}
+
+.main-container .hi-container-fluid div img{
+  height: 65px;
+  width: 65px;
+  padding: 1rem 1.5rem;
+}
+
+.main-container .hi-container-fluid div a{
+  display: block;
+  text-align: center
 }
 
 /* bg */
