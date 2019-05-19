@@ -50,20 +50,7 @@ p {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* bg */
 
-.main-bg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/bg.jpg");
-  background-position:center;
-  background-size: cover;
-  z-index: -10;
-  filter: blur(2px)
-}
 
 .content {
   width: 98rem;
@@ -184,6 +171,32 @@ p {
     box-shadow: 0 0 0 2px rgba(68, 71, 70, 0.2);
 }
 
+.search-suggestions{
+  position: relative;
+  left: 0;
+  width: 20rem;
+  background-color: rgb(46, 45, 45);
+  opacity: 0.9;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.search-suggestion-item{
+  overflow: hidden;
+  width: 19.5rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.search-suggestion-item:hover{
+  background: rgb(128, 127, 127);
+  font-size: 1.25rem;
+  border-radius: 4px;
+}
+
 /* main */
 .main-container {
   width: 98rem;
@@ -205,4 +218,19 @@ p {
 
 .main-container-item-a img{
   width: 100%;
+}
+
+/* bg */
+
+.main-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/bg.jpg");
+  background-position:center;
+  background-size: cover;
+  z-index: -10;
+  filter: blur(2px)
 }
