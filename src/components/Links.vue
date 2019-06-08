@@ -1,10 +1,10 @@
 <template>
   <section class="main">
-    <div class="content">
-      <div class="main-container hi-container-fluid">
-        <!-- col-xs- col-sm- col-md- col-lg- -->
+    <div class="hi-container">
+      <div class="main-container ">
+        <!--col-xs  col-sm 768 col-md 992 col-lg 1200-->
         <template v-for="(item,key) in linkInfo">
-          <div class="col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hi-panel">
               <div class="hi-panel-heading">
                 <div class="panel-title">{{item.cate_gory}}</div>
@@ -48,7 +48,6 @@ export default {
 
 <style lang="scss">
 /* bg */
-
 .main-bg {
   position: fixed;
   top: 0;
@@ -108,7 +107,19 @@ export default {
   color: #fff;
 }
 
+.hi-container-fluid{
+  margin: 0 auto
+}
+
 .hi-container-fluid a {
+  display: block;
+  text-align: center;
+}
+
+.hi-container{
+  margin: 0 auto
+}
+.hi-container a {
   display: block;
   text-align: center;
 }

@@ -20,41 +20,41 @@
       v-bind:placeholder="placeHolder"
     >
     <div class="nav-search-change">
-      <a href="javascript:void(0);" @mouseover="suggestions.dis = false" @mouseout="suggestions.dis = true">来源</a>
+      <a href="javascript:void(0);" @mouseenter="suggestions.dis = false" @mouseleave="suggestions.dis = true">来源</a>
       <div class="nav-dropmenu">
         <div class="nav-dropmenu-item">
           <a
             href="javascript:void(0);"
             @click="placeHolder = '百度搜索',from = 'baidu'"
-            @mouseover="suggestions.dis = false"
+            @mouseenter="suggestions.dis = false"
           >百度</a>
         </div>
         <div class="nav-dropmenu-item">
           <a
             href="javascript:void(0);"
             @click="placeHolder = '搜狗搜索',from = 'sogou'"
-            @mouseover="suggestions.dis = false"
+            @mouseenter="suggestions.dis = false"
           >搜狗</a>
         </div>
         <div class="nav-dropmenu-item">
           <a
             href="javascript:void(0);"
             @click="placeHolder = '360搜索',from = 'qh360'"
-            @mouseover="suggestions.dis = false"
+            @mouseenter="suggestions.dis = false"
           >360</a>
         </div>
         <div class="nav-dropmenu-item">
           <a
             href="javascript:void(0);"
             @click="placeHolder = '必应搜索',from = 'bing'"
-            @mouseover="suggestions.dis = false"
+            @mouseenter="suggestions.dis = false"
           >Bing</a>
         </div>
         <div class="nav-dropmenu-item">
           <a
             href="javascript:void(0);"
             @click="placeHolder = 'Google搜索',from = 'google'"
-            @mouseover="suggestions.dis = false"
+            @mouseenter="suggestions.dis = false"
           >Google</a>
         </div>
       </div>
@@ -213,7 +213,7 @@ export default {
         this.suggestions.data = [];
         return;
       }
-      //获取缓存的from对应数组，其中保存的对象解构是{keyword:'',suggestions:[]}
+      //获取缓存的from对应数组，其中保存的对象结构是{keyword:'',suggestions:[]}
       const result = this.catchSuggestion[searchType].some(
         (item, index, array) => {
           //ES6数组some的方法
@@ -263,7 +263,7 @@ export default {
 <style lang="scss" scoped>
 .nav-search {
   float: right;
-  width: 26rem;
+  // width: 26rem;
   height: 3.8rem;
   line-height: 3.8rem;
   color: #fff;

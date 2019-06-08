@@ -1,5 +1,5 @@
 <template>
-    <div class="nav">
+    <nav class="nav">
       <div class="content">
         <div class="nav-logo">Xy导航</div>
         <ul class="nav-header">
@@ -79,8 +79,7 @@
         </ul>
         <v-search></v-search>
         </div>
-      </div>
-    </div>
+      </nav>
 </template>
 
 
@@ -102,6 +101,12 @@ export default {
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+.nav::after{
+  display: block;
+  content: '';
+  clear: both;
 }
 
 .nav-header {
